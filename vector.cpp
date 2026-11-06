@@ -6,9 +6,10 @@ int main(){
     // vector<int> vec;
     vector<int> vec={1,2,3,4,5,6,7};
 
-    vector<int>::iterator it ;
+    // vector<int>::iterator it ;
 
-    for(it = vec.begin(); it !=vec.end() ; it++){
+    //In modern c++ we can use auto keyword to avoid writing the long iterator type.
+    for(auto it = vec.rbegin(); it !=vec.rend() ; it++){
         cout << *(it) << " ";
     }
     cout << endl;
